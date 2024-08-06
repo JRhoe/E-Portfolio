@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>James Rhoe</title>
+    <link rel="icon" type="image/x-icon" href="./assets/LOGO.png">
+    <script
+      src="https://kit.fontawesome.com/7b3e1ee29a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "j4DsV6XlgI2kfVPVp",
+        });
+      })();
+    </script>
+  </head>
+  <body onmousemove="moveBackground(event)">
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/LogoBlack.png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a href="#" class="nav__link--anchor"
+              ><i
+                class="fas fa-circle-half-stroke"
+                onclick="toggleContrast()"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm James.</h1>
+          <p class="header__para">
+            Im a <b class="orange">Frontend Developer</b> with a strong passion for creating beautiful web applications that provide a great user experience.
+            <br />
+            Here's a bit more
+            <b class="orange click" onclick="toggleModal()">about me dont forget resume link</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="http://www.linkedin.com/in/james-rhoe"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/JRhoe"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="http://google.com"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Hear's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I am a <b class="orange">Frontend Developer</b> with strong <b class="orange">problem-solving</b> skills 
+            and the ability to think creatively and outside the box. 
+            My consulting background has honed my ability to approach challenges 
+            from multiple perspectives and devise <b class="orange">innovative solutions.</b>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="Html Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="CSS Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="JavaScript Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/next-9305886-7694085.png?f=webp&w=256"
+                alt="NextJS Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">Next JS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt="React Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <!-- <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/python-2749327-2284717.png?f=webp&w=256"
+                alt="Python Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">Python</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-512/free-typescript-3628533-3030738.png?f=webp&w=256"
+                alt="TypeScript Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">TypeScript</span>
+            </figure> -->
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-512/free-tailwind-css-5285308-4406745.png?f=webp&w=256"
+                alt="Tailwind Logo"
+                class="modal__language--img"
+              />
+              <span class="language__name">Tailwind</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i
+            class="fa-solid fa-xmark modal__exit click"
+            onclick="toggleModal()"
+          ></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunbities
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--lable">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--lable">E-mail</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--lable">Message</label>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>.
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Apple Clone Project.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      iPhone Website (clone)
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, React, TypeScript, Tailwind
+                    </h4>
+                    <p class="project__description--para">
+                      Clone of the iPhone 15 product website. Complete with animations, video background, and a 3D render of the iPhone.
+                    </p>
+                    <div class="project__desciption--links">
+                      <a href="https://github.com/JRhoe/Apple-Clone" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://apple-clone-a332a4b85e7d.herokuapp.com/" target="_blank" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Library Project.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Library (E-Commerce)
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, React
+                    </h4>
+                    <p class="project__description--para">
+                      E-Commerce website, includes listing all books and supports dynamic filtering by price and rating.
+                    </p>
+                    <div class="project__desciption--links">
+                      <a href="https://github.com/JRhoe/Library/" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://libraryapp-jrhoe-2d6fdd61dd18.herokuapp.com/" target="_blank" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Brainwave Clone Project.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Brainwave (clone)
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, React, Tailwind
+                    </h4>
+                    <p class="project__description--para">
+                      Beautiful Brainwave AI clone. Fully responsive with mobile menu, includes animations, transitions, and paralax effects.
+                    </p>
+                    <div class="project__desciption--links">
+                      <a href="https://github.com/JRhoe/Brainwave" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://brainwave-e049785d4dbc.herokuapp.com/" target="_blank" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/MoviesHD Project.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Movies HD
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, React
+                    </h4>
+                    <p class="project__description--para">
+                      Fully responsive movie and tv-show search. Supports filtering by release date and alphabetically. Accesing backend API to retrieve list of movies.
+                    </p>
+                    <div class="project__desciption--links">
+                      <a href="https://github.com/JRhoe/moviesHD" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://movieshd-72b031694b40.herokuapp.com/" target="_blank" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Zoom Clone Project.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Zoom (clone)
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, Next JS, Tailwind
+                    </h4>
+                    <p class="project__description--para">
+                      Clone of a zoom style website. Supports account creation, video meetings, multiple participants, meeting scheduling. Give it a try!
+                    </p>
+                    <div class="project__desciption--links">
+                      <a href="https://github.com/JRhoe/Zoom-clone" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://zoom-clone-green-six.vercel.app/" target="_blank" class="project__description--link">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <a href="#"">
+            <img
+              class="footer__logo--img"
+              src="./assets/LogoWhiteAlt.png"
+              alt=""
+            />
+            </a>
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/JRhoe"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            <a
+              href="http://www.linkedin.com/in/james-rhoe"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <a
+              onclick="toggleModal()"
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume dont for get this
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright © 2024 James Rhoe</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
