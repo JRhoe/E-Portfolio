@@ -705,7 +705,7 @@ SHAPES
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .title {
         font-size: 52px;
     }
