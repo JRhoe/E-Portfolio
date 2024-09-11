@@ -694,7 +694,7 @@ SHAPES
         top: 0;
         left: 0;
         transform: none;
-        height: auto;
+        height: 100vh;
         width: 100%;
         flex-direction: column-reverse;
         border-radius: 0;
@@ -702,6 +702,16 @@ SHAPES
 
     .modal__half {
         width: 100%;
+    }
+
+    .modal__contact{
+        height: 70vh;
+    }
+
+    .modal__about{
+        height: 30vh;
+        justify-content: start;
+        overflow-y: scroll;
     }
 }
 
