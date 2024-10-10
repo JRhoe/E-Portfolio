@@ -2,7 +2,7 @@
 // service_rz1my3m
 // j4DsV6XlgI2kfVPVp
 let isModalOpen = false;
-let contrastToggle = true;
+let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
 function moveBackground(event) {
