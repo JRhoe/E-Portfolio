@@ -706,11 +706,10 @@ SHAPES
     }
 
     .modal__contact{
-        /* height: 70vh; */
+        height: 70vh;
     }
 
     .modal__about{
-        /* height: 30vh; */
         justify-content: start;
     }
 }
