@@ -694,10 +694,11 @@ SHAPES
         top: 0;
         left: 0;
         transform: none;
-        height: 100vh;
+        /* height: 100vh; */
         width: 100%;
         flex-direction: column-reverse;
         border-radius: 0;
+        overflow-y: scroll;
     }
 
     .modal__half {
@@ -705,13 +706,12 @@ SHAPES
     }
 
     .modal__contact{
-        height: 70vh;
+        /* height: 70vh; */
     }
 
     .modal__about{
-        height: 30vh;
+        /* height: 30vh; */
         justify-content: start;
-        overflow-y: scroll;
     }
 }
 
